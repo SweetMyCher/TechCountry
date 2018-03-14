@@ -1,0 +1,64 @@
+body{
+	background: #d5d8ac;
+}
+#wrapper {
+	max-width: 1200px;
+	margin: auto;
+}
+header {
+	padding: 20px 0;
+}
+nav li, header li{
+	display: inline;
+}
+nav a{
+	background: #8cd28c;
+	padding: 1em;
+}
+header ul{
+	margin-left: 100px;
+}
+.figure{
+	width: 500px;
+	float: left;
+	margin-bottom: 10px;
+}
+th{
+	background: #8cd28c;
+}
+td{
+	border-bottom: 2px solid #95caa2;
+}
+table{
+	margin-top: 35px;
+	float: right;
+	width: 600px;
+}
+#sum{
+	margin-top: 500px;
+	margin-left: 40px;
+	width: 500px;
+	background: #e0dd78;
+}
+#data-client{
+	background: #e0dd78;
+	margin-left: 40px;
+	width: 500px;
+}
+#info, .info-text{
+	width: 500px;
+	margin-left: 40px;
+}
+#contacts{
+	float: left;
+	margin-top: 50px;
+}
+#buyit{
+	margin-top: 200px
+}
+#feedback{
+	float: right;
+	width: 550px;
+	margin-top: -460px;
+	background: #e0dd78;
+}
