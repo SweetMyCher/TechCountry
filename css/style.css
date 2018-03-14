@@ -22,6 +22,7 @@ header ul{
 	width: 500px;
 	float: left;
 	margin-bottom: 10px;
+
 }
 th{
 	background: #8cd28c;
@@ -29,17 +30,12 @@ th{
 td{
 	border-bottom: 2px solid #95caa2;
 }
-table{
-	margin-top: 35px;
+#table{
+	margin: 90px;
 	float: right;
 	width: 600px;
 }
-#sum{
-	margin-top: 500px;
-	margin-left: 40px;
-	width: 500px;
-	background: #e0dd78;
-}
+
 #data-client{
 	background: #e0dd78;
 	margin-left: 40px;
@@ -51,14 +47,16 @@ table{
 }
 #contacts{
 	float: left;
-	margin-top: 50px;
 }
-#buyit{
-	margin-top: 200px
+
+
+footer {
+	background: #5baf28;
 }
-#feedback{
-	float: right;
-	width: 550px;
-	margin-top: -460px;
-	background: #e0dd78;
+#footer-logo{
+	background: #dce8d5;
 }
+#table, #figure, #contacts, #feedback, footer div{
+	display: inline-block;
+}
+
