@@ -1,39 +1,47 @@
 body{
 	background: #d5d8ac;
 }
-#wrapper {
-	max-width: 1200px;
-	margin: auto;
+#table-and-figure{
+	height: 820px;
+}
+#table-done-search{
+	margin: 90px;
+	float: right;
+	width: 600px;
+}
+.figure{
+	width: 500px;
+	float: left;
+	margin-bottom: 10px;
+}
+#buyit{
+	float: left;
+}
+#contacts{
+	float: left;
 }
 header {
-	padding: 20px 0;
+	background: #d4f9d4;
 }
-nav li, header li{
+header li{
 	display: inline;
 }
-nav a{
+header nav a{
 	background: #8cd28c;
 	padding: 1em;
 }
 header ul{
 	margin-left: 100px;
 }
-.figure{
-	width: 500px;
-	float: left;
-	margin-bottom: 10px;
 
-}
 th{
 	background: #8cd28c;
 }
 td{
 	border-bottom: 2px solid #95caa2;
 }
-#table{
-	margin: 90px;
-	float: right;
-	width: 600px;
+#table-and-figure h2{
+	text-align: center;
 }
 
 #data-client{
@@ -45,18 +53,33 @@ td{
 	width: 500px;
 	margin-left: 40px;
 }
-#contacts{
-	float: left;
-}
-
-
 footer {
-	background: #5baf28;
+	background: #3f791b;
 }
-#footer-logo{
+#left-footer-block{
 	background: #dce8d5;
 }
-#table, #figure, #contacts, #feedback, footer div{
+#right-footer-block{
+background: #5baf28;
+}
+#right-footer-block ul{
+	display: inline-block;
+}
+.sitemap-fourth-row li, #down-footer-block li{
+	display: inline;
+}
+#table, #figure, #contacts, #feedback, footer section{
+	display: inline-block;
+}
+#feedback{
+	float: right;
+	height: 600px;
+	width: 500px;
+}
+#contacts-and-feedback{
+	height: 700px;
+}
+#down-footer-block ul{
 	display: inline-block;
 }
 
