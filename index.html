@@ -8,7 +8,7 @@
 <body>
 	<header>
 		<nav>
-			<ul id="top-menu">
+			<ul id="top-menu"> 
 				<li>
 					<a href="#">
 						<img src="img/header-logo.jpg" alt="TechCountry header logo">
@@ -22,7 +22,7 @@
 				<li><a href="#">О компании</a></li>
 				<li><a href="#">Наши советы</a></li>
 				<li><a href="#">Контакты</a></li>
-				<li><a href="#"><img src="img/menu-02.jpg" alt="whats broken"> Что сломалось?</a></li>
+				<li><a href="#"><img src="img/menu-02.jpg" alt="whats broken"> Что сломалось?</a></li> <!-- Одна и та же картинка с разным альтом - нехорошо. По идее тут должно быть просто menu icon. Короче если картинка не загрузилась - ты по альту должен понять что там должно было быть -->
 				<li><a href="#"><img src="img/menu-02.jpg" alt="parts store">Магазин запчастей</a></li>
 				<li><a href="#">Магазин техники ></a></li>
 				<li>
@@ -32,8 +32,8 @@
 				</li>
 			</ul>
 		</nav>
-		<h4>Найдено 16 деталей для вашей техники</h4>
-		<h1>Каталог запчастей</h1>
+		<p>Найдено 16 деталей для вашей техники</p>
+		<h2>Каталог запчастей</h2>
 		<ul class="find-menu">
 			<li>Производитель
 				<select name="brand">
@@ -71,120 +71,346 @@
 	<main>
 <!-- start фигура, покупка и таблица -->
 		<div id="table-and-figure">
-		<h2>Быстродействующее натяжнок устройство цепи:</h2>
-		<div id="table-done-search">
-			<table>
-				<thead>
-					<tr>
-						<th>№</th>
-						<th>Наименование</th>
-						<th>Включает</th>
-						<th>Цена</th>
-						<th></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td></td>
-						<td>
-							<p>Комплект - устройство быстрого натяжения цепи</p>
-							<p>11230071008</p>
-						</td>
-						<td>1-15</td>
-						<td>1765.00</td>
-						<td>
-							<div class="bui-it">
-								<span class="more"></span>
-								<span class="quantity"></span>
-								<span class="less"></span>
-							</div>
-						</td>
-					</tr>		
-					<tr>
-						<td>1</td>
-						<td>
-							<p>Крышка зепной звездочки</p>
-							<p>11236401700</p>	
-						</td>
-						<td>2-4</td>
-						<td>715.00</td>
-						<td>
-							<div class="bui-it">
-								<span class="more"></span>
-								<span class="quantity"></span>
-								<span class="less"></span>
-							</div></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td colspan="2">
-							<p>Защитный щиток</p>
-							<p>11236483800</p>
-						</td>
-						<td>95.00</td>
-						<td>
-							<div class="bui-it">
-								<span class="more"></span>
-								<span class="quantity"></span>
-								<span class="less"></span>
-							</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div id="figure">
-			<figure>
-				<img src="img/chain.jpg" alt="chain">
-			</figure>
-		</div>
-		<div id="buyit">
-			<div id="sum">
-				<p>
-					Выбрано на сумму: 100250.-
-						<a href="#"><img src="img/close.jpg" alt="close"></a>
-				</p>
-		  </div>
-			<form id="data-client">
-				<p><input name="client" size="30" value="Константин Константинович">Как к вам обращаться?</p>
-				<p><input size="30" value="Номер телефона или почта" name="phone">Как с вами связаться?</p>
-				<p><input size="30" value="Комментарий к заявке" name="comment"></p>
-				<p><input type="button" name="submit" value="Отправить заявку"></p>
-				<p>
-					Нажимая "Отправить заявку", вы подтверждаете свое согласие "
-						<a href="#">с правилами обработки персональных данны.</a>
-				</p>
-			</form>	
-		</div>
+			<h1>Быстродействующее натяжнок устройство цепи:</h1>
+			<article>
+				<div id="figure">
+					<figure>
+						<img src="img/chain.jpg" alt="chain">
+					</figure>
+					<div class="actions">
+						<a href="#" class="fullscreen"></a>
+						<a href="#" class="zoom-in"></a>
+						<a href="#" class="zoom-out"></a>
+					</div>
+				</div>
+				<div id="buyit">
+					<div id="sum">
+						<p>
+							Выбрано на сумму: 100250.-
+								<a href="#"><img src="img/close.jpg" alt="close"></a>
+						</p>
+				  </div>
+					<form id="data-client">
+						<!-- Лэйблы вместо p должны быть, первый поправил - остальное сам. Можно дополнительно каждую группу лейбл-инпут обернуть в див -->
+						<div id="client">
+							<label for="client">Как к вам обращаться?</label>
+							<input name="client" size="30" value="Константин Константинович">
+						</div>
+						<div>
+							<label for="phone">Как с вами связаться?</label>
+							<input name="phone" size="30" value="Номер телефона или почта">
+						</div>
+						<div>
+							<label for="comment"></label>
+							<input name="comment" size="30" value="Комментарий к заявке">
+						</div>
+						<p><input type="button" name="submit" value="Отправить заявку"></p>
+						<p>
+							Нажимая "Отправить заявку", вы подтверждаете свое согласие "
+								<a href="#">с правилами обработки персональных данны.</a>
+						</p>
+					</form>	
+				</div>
+			</article>
+			<div id="table-done-search">
+				<table>
+					<thead>
+						<tr>
+							<th>№</th>
+							<th>Наименование</th>
+							<th>Включает</th>
+							<th>Цена</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	
+							<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	<tr>
+							<td></td>
+							<td>
+								<p>Комплект - устройство быстрого натяжения цепи</p>
+								<p>11230071008</p>
+							</td>
+							<td>1-15</td>
+							<td>1765.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>	
+						<tr>
+							<td>1</td>
+							<td>
+								<p>Крышка зепной звездочки</p>
+								<p>11236401700</p>	
+							</td>
+							<td>2-4</td>
+							<td>715.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td colspan="2">
+								<p>Защитный щиток</p>
+								<p>11236483800</p>
+							</td>
+							<td>95.00</td>
+							<td>
+								<div class="bui-it">
+									<span class="more"></span>
+									<span class="quantity"></span>
+									<span class="less"></span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>			
 		</div>
 <!-- finish фигура, покупка и таблица -->
 <!-- start контакты и обратная связь -->
-		<div id="contacts-and-feedback">
+		<section id="contacts-and-feedback">
 			<div id="contacts">
-				<div id="info">
-					<h2>Наши контакты</h2>
-					<h3>Как с нами связаться?</h3>
+					<h3>Наши контакты</h3>
+					<h4>Как с нами связаться?</h4>
 					<p>Позвоните нам по телефону или свяжитесь любым удобным способом - 
 					мы проконсультируем вас по наличию запчастей, сроком поступления и стоимости.</p>
+				<div class="social">
+					<a href="#" target="_blank" rel="nofollow"><img src="img/telegram.jpg" alt="TechCountry in telegram"></a>
+					<a href="#" target="_blank" rel="nofollow"><img src="img/viber.jpg" alt="TechCountry in viber"></a>
+					<a href="#" target="_blank" rel="nofollow"><img src="img/whatsapp.jpg" alt="TechCountry in whatsapp"></a>
+					<a href="#" target="_blank" rel="nofollow"><img src="img/email.jpg" alt="TechCountry email"></a>
 				</div>
-				<figure>
-					<img src="img/telegramm.jpg" alt="TechCountry in telegramm">
-					<img src="img/viber.jpg" alt="TechCountry in viber">
-				</figure>
-				<figure>
-					<img src="img/whatsapp.jpg" alt="TechCountry in whatsapp">
-					<img src="img/email.jpg" alt="TechCountry email">
-				</figure>
-				<p class="info-text">Вы можете написать нам любым удобным способом - viber, whatsapp, telegramm</p>
+				<p class="info-text">Вы можете написать нам любым удобным способом - viber, whatsapp, telegram</p>
 			</div>
-			<form id="feedback">
+			<div id="feedback">
+			<form >
 				<h2>Мы позвоним сами</h2>
+				<!-- Та же история с лейблами и лишние обертки в p -->
 				<p><input name="client" size="30" value="Константин Константинович">Как к вам обращаться?</p>
 				<p><input size="30" value="Номер телефона или почта" name="phone">Как с вами связаться?</p>
 				<p><input size="30" value="Марка и модель техники" name="mark"></p>
 				<p>
 					<input size="30" value="Узел или описание детали" name="details">
-					<a href="#"><img src="img/info-knot.jpg" alt="about knot"></a>
+					<a href="#"><img src="img/info-knot.jpg" alt="question icon"></a>
 				</p>
 				<p><input type="button" name="submit" value="Обратный звонок"></p>
 					<p>
@@ -193,20 +419,21 @@
 					</p>
 			</form>
 		</div>
+		</section>
 	<!-- finish контакты и обратная связь -->		
 	</main>
 <!-- start подвал -->
 	<footer>
 		<section id="left-footer-block">
 			<a href="#"><img src="img/footer-logo.jpg" alt="TechCountry footer-logo"></a>
-			<h4>info@techcountry.ru</h4>
-			<h4>+7 (495) 147 65 66</h4>
+			<a href="mailto:info@techcountry.ru">info@techcountry.ru</a>
+			<a href="tel:84951476566">+7 (495) 147 65 66</a>
 		</section>
 		<section id="right-footer-block">
 			<nav>
 				<ul class="sitemap-first-row">
 					<li><a href="#">О компании</a></li>
-					<li><a href="#">Наши советы +2</a></li>
+					<li><a href="#">Наши советы <span>+2</span></a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="sitemap-second-row">
@@ -218,51 +445,27 @@
 					<li><a href="#">Обратный звонок ></a></li>
 					<li><a href="#">Статус ремонта ></a></li>
 				</ul>
-				<ul class="sitemap-fourth-row">
-					<li><p>Мы в соцсетях</p></li>
-					<li>
-						<a href="#">
-							<img src="img/vk-footer.jpg" alt="TechCountry in vkontakte.ru ">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/fb-footer.jpg" alt="TechCountry in facebook.com ">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/tw-footer.jpg" alt="TechCountry in twitter.com ">
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<img src="img/in-footer.jpg" alt="TechCountry in instagramm.com ">
-						</a>
-					</li>
-				</ul>
+				<div class="sitemap-fourth-row">
+					<p>Мы в соцсетях</p>
+						<a href="#" target="_blank" rel="nofollow"><img src="img/vk-footer.jpg" alt="vkontakte icon"></a>
+						<a href="#" target="_blank" rel="nofollow"><img src="img/fb-footer.jpg" alt="facebook icon"></a>
+						<a href="#" target="_blank" rel="nofollow"><img src="img/vk-footer.jpg" alt="vkontakte icon"></a>
+						<a href="#" target="_blank" rel="nofollow"><img src="img/fb-footer.jpg" alt="facebook icon"></a>
+				</div>
 			</nav>
-			</section>
-			<p>
-				<section id="down-footer-block">
-						<ul>
-							<li>Адрес:</li>
-							<li>Москва, Академика Янгеля, 14к5с2</li>
-						</ul>
-						<ul>
-							<li>Режим работы:</li>
-							<li>ежедневно, 10:00-19:00</li>
-						</ul>
-						<ul>
-							<li>#сдеалноAnmdeio</li>
-							<li>
-								<a href="#top-menu">
-									<img src="img/up.jpg" alt="up to page">
-								</a>
-							</li>
-						</ul>
-				</section>
-			</p>
+		</section>
+		<div class="bottom-footer-block">
+			<div class="info">
+				<p><span class="info_label">Адрес:</span> Москва, Академика Янгеля, 14к5с2</p>
+				<p><span class="info_label">Режим работы:</span> пн-пт: 10:00-19:00, сб-вс: 11:00-16:00</p>
+			</div>
+			<a href="http://anmedio.ru/" rel="nofollow" target="_blank" class="copyright">
+				<img src="img/copyright.jpg" alt="ANMEDIO logo">
+			</a>
+			<a href="#top-menu">
+				<img src="img/arrow-top.jpg" alt="Arrow top icon">
+			</a>
+		</div>
 	</footer>
 	<!-- finish подвал -->
 </body>

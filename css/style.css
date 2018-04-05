@@ -1,85 +1,88 @@
+/*html, body{
+	height: 100%;
+	width: 100%;
+	max-width: 1075px;
+}
 body{
-	background: #d5d8ac;
-}
-#table-and-figure{
-	height: 820px;
-}
-#table-done-search{
-	margin: 90px;
-	float: right;
-	width: 600px;
-}
-.figure{
-	width: 500px;
-	float: left;
-	margin-bottom: 10px;
-}
+	background: olive;
+	margin: 0;
+	padding: 0;
+}*/
+
 #buyit{
-	float: left;
+  background: #fff9e3;
+   width: 525px;
+}
+#sum{
+  
+  border-bottom: 2px solid white;
+  height: 62px;
+  margin: 10px 0;
+}
+#sum img{
+  float: right;
 }
 #contacts{
-	float: left;
+  width: 590px;
+  background: #fff9e3;
 }
-header {
-	background: #d4f9d4;
+#feedback{
+  background: #fff9e3;
+  width: 690px;
 }
-header li{
-	display: inline;
+#contacts-and-feedback div{
+  display: inline-block;
 }
-header nav a{
-	background: #8cd28c;
-	padding: 1em;
+#table-and-figure article{
+  display: inline-block;
+  
 }
-header ul{
-	margin-left: 100px;
+#table-done-search{
+  display: inline-block;
+
 }
 
-th{
-	background: #8cd28c;
-}
-td{
-	border-bottom: 2px solid #95caa2;
-}
-#table-and-figure h2{
-	text-align: center;
+footer{
+
+  background: #7e7e7e;
+  color: #dbdbdb;
+  font-size: 11px;
+  margin: auto;
+  
 }
 
-#data-client{
-	background: #e0dd78;
-	margin-left: 40px;
-	width: 500px;
+#left-footer-block {
+  height: 165px;
+  float: left;
+  width: 370px;
+  background: #eaf5e3;
+  bottom: 65px;
 }
-#info, .info-text{
-	width: 500px;
-	margin-left: 40px;
+
+#right-footer-block {
+  width: auto;
+  height: 165px;
+  background: #73bc45;
+ 
 }
-footer {
-	background: #3f791b;
+.bottom-footer-block{
+  background: #25523f;
+  height: 65px;
+  width: 100%;
+  
 }
-#left-footer-block{
-	background: #dce8d5;
+.bottom-footer-block div{
+	display: inline-block;
 }
-#right-footer-block{
-background: #5baf28;
+.bottom-footer-block a{
+	display: inline-block;
 }
 #right-footer-block ul{
 	display: inline-block;
 }
-.sitemap-fourth-row li, #down-footer-block li{
-	display: inline;
-}
-#table, #figure, #contacts, #feedback, footer section{
+#right-footer-block div{
 	display: inline-block;
 }
-#feedback{
-	float: right;
-	height: 600px;
-	width: 500px;
-}
-#contacts-and-feedback{
-	height: 700px;
-}
-#down-footer-block ul{
+.info p{
 	display: inline-block;
 }
-
